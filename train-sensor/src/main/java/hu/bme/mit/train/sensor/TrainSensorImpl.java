@@ -20,6 +20,10 @@ public class TrainSensorImpl implements TrainSensor {
 		return speedLimit;
 	}
 
+	public void print(){
+		System.out.println(speedLimit);
+	}
+
 	@Override
 	public void overrideSpeedLimit(int speedLimit) {
 		this.speedLimit = speedLimit;
