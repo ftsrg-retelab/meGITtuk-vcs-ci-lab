@@ -1,7 +1,12 @@
 package hu.bme.mit.train.user;
 
+import com.google.common.collect.HashBasedTable;
 import hu.bme.mit.train.interfaces.TrainController;
 import hu.bme.mit.train.interfaces.TrainUser;
+import com.google.common.collect.HashBasedTable;
+import com.google.common.collect.Table;
+import com.google.common.collect.Table.Cell;
+
 
 public class TrainUserImpl implements TrainUser {
 
@@ -9,6 +14,7 @@ public class TrainUserImpl implements TrainUser {
 	private int joystickPosition;
 
 	public TrainUserImpl(TrainController controller) {
+
 		this.controller = controller;
 	}
 
@@ -28,4 +34,11 @@ public class TrainUserImpl implements TrainUser {
 		controller.setJoystickPosition(joystickPosition);
 	}
 
+	public void tachographModule()
+	{
+		Table<Integer, Integer, Integer> table = HashBasedTable.create();
+		table.put(0, 5, 5);
+		table.put(1, 6, 15);
+
+	}
 }
