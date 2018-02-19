@@ -21,6 +21,7 @@ public class TrainSensorImpl implements TrainSensor {
 	}
 
 	public void print(){
+		//egy sor megvaltozott branch-A
 		System.out.println(speedLimit);
 	}
 
