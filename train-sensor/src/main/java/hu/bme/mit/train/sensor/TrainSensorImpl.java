@@ -21,6 +21,7 @@ public class TrainSensorImpl implements TrainSensor {
 	}
 
 	public void print(){
+		System.out.println("branch-B");
 		System.out.println(speedLimit);
 	}
 
