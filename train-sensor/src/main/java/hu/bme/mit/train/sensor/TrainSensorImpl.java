@@ -9,7 +9,7 @@ public class TrainSensorImpl implements TrainSensor {
 	private TrainController controller;
 	private int speedLimit = 5;
 
-	public TrainSensorImpl(TrainController controller) {
+	public TrainSensorImpl(TrainController controller, TrainUser user) {
 		this.controller = controller;
 	}
 
