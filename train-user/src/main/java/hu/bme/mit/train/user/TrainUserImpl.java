@@ -3,10 +3,7 @@ package hu.bme.mit.train.user;
 import com.google.common.collect.HashBasedTable;
 import hu.bme.mit.train.interfaces.TrainController;
 import hu.bme.mit.train.interfaces.TrainUser;
-import com.google.common.collect.HashBasedTable;
 import com.google.common.collect.Table;
-import com.google.common.collect.Table.Cell;
-
 
 public class TrainUserImpl implements TrainUser {
 
